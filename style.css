@@ -61,7 +61,7 @@ margin-top: px;
 }
 
 .apoio {
-    border: 5px solid black;
+    border: 5px solid #810020;
     border-radius: 15px;
 }
 .prf    {
@@ -82,5 +82,22 @@ margin-top: px;
 }
 .btop {
     height: 35px;
-    width: 35px;
+    width: 80px;
+    border-radius: 15px;
+
+    margin-top: 15px;
+    /* border-color: #810020; */
+    border: 3px solid #D4AF37;
+}
+.op {
+    color: #D4AF37;
+    border: 3px solid #810020;
+    margin-top: 5px;
+    border-radius: 15px;
+    background-color: #810020;
+}
+.op>article {
+    font-family: "Lora", serif;
+    background-color: #810020;
+
 }
