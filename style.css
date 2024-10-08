@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F8F4E3;
+}
+
+#cab {
+    background-color: #810020;
+    height: 100px;
+    width: 100%;
+}
+
+h1 {
+    background-color: #810020;
+    height: 100%;
+    width: 100%;
+    color: #D4AF37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    text-align: center;
+}
+
+main {
+    background-color: #F8F4E3;
+}
+
+.calendario {
+    /* border: 2px solid black; */
+    margin-top: 20PX;
+    border-radius: 15PX;
+}
+.hcalendario {
+    background-color: #810020;
+    border-radius: 9px 9px 0px 0px;
+    height: 50px;
+    text-align: center;
+}
+.hcalendario>span {
+background-color: #810020;
+color: #D4AF37;
+margin-top: px;
+    font-size: 30px;
+    font-family: "Lora", serif;
+}
+.corpocal>p {
+    display: inline-block;
+    width: 30%;
+    
+}
+.corpocal {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px 0px 9px 9px;
+}
+
+.apoio {
+    border: 5px solid black;
+    border-radius: 15px;
+}
+.prf    {
+    color: #D4AF37;
+    background-color: #810020;
+    height: 80px;    
+    font-size: 25px;
+}
+.prf>span   {
+    color: #D4AF37;
+    background-color: #810020;
+    
+}
+/* provisorio */
+.col
+{
+    text-align: center;
+}
