@@ -4,6 +4,8 @@
     background-color: #F8F4E3;
 }
 
+
+
 #cab {
     background-color: #810020;
     height: 100px;
@@ -21,9 +23,11 @@ h1 {
     padding-top: 25px;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 main {
@@ -76,28 +80,64 @@ margin-top: px;
     
 }
 /* provisorio */
-.col
-{
-    text-align: center;
-}
-.btop {
-    height: 35px;
-    width: 80px;
-    border-radius: 15px;
 
-    margin-top: 15px;
-    /* border-color: #810020; */
-    border: 3px solid #D4AF37;
+/* Estilo dos artigos */
+.col{
+    
+    color: #ffffff; /* Texto branco */
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9); /* Sombra suave */
+    border: 2px solid #D4AF37; /* Border dourado */
+    background-color: #810020;
+    border-radius:5px;
 }
+
+
 .op {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 15px;
+    background-color: #810020;
     color: #D4AF37;
-    border: 3px solid #810020;
-    margin-top: 5px;
     border-radius: 15px;
-    background-color: #810020;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
-.op>article {
-    font-family: "Lora", serif;
-    background-color: #810020;
 
+
+.op:hover {
+    transform: scale(1.05); /* Efeito de hover para aumentar levemente */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra mais intensa ao hover */
+}
+
+#recepcionista{
+    justify-content: flex-end; /* Alinha o conteúdo para a direita */
+}
+
+.btop {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #D4AF37;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.btop:hover {
+    background-color: #D4AF37;
+}
+
+
+
+img {
+        
+        border-radius: 50%; /* Raio da borda para formato redondo */
 }
