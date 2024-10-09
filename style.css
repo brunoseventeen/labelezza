@@ -8,19 +8,22 @@
 
 #cab {
     background-color: #810020;
-    height: 100px;
+    height: 55px;
     width: 100%;
+}
+#cab2 {
+    background-color: #810020;
+    height: 95px;
+    width: 100%;
+}
+#hr1 {
+    margin: 0px 400px;
+    border: 2px solid #D4AF37;
 }
 
 h1 {
     background-color: #810020;
-    height: 100%;
-    width: 100%;
     color: #D4AF37;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 25px;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -109,6 +112,7 @@ margin-top: px;
 }
 
 
+
 .op:hover {
     transform: scale(1.05); /* Efeito de hover para aumentar levemente */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra mais intensa ao hover */
@@ -141,3 +145,46 @@ img {
         
         border-radius: 50%; /* Raio da borda para formato redondo */
 }
+
+/* .h2rec {
+    background-color: #810020;
+    
+} */
+.mesas {
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    border: 3px solid #ffffff;
+    background-color: #810020;
+    color: #d4af37;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.mesas:hover {
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    border: 3px solid #3cff00;
+    background-color: #810020;
+    color: #d4af37;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    transform: scale(1.1);
+}
+.disabled {
+    background-color: gray; /* Cor cinza */
+    color: white; /* Texto branco */
+    cursor: not-allowed; /* Muda o cursor para indicar que não está habilitado */
+    pointer-events: none; /* Desabilita todos os eventos do mouse */
+}
+.area {
+    margin-top: 15px;
+}
+.liberar {
+    background-color: #810020;
+    color: #D4AF37;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-family: "Montserrat" , sans-serif;
+    margin-top: 35px;}

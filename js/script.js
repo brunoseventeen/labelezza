@@ -80,3 +80,7 @@ function sincronizarData() {
 
 // Chama a função quando a página carregar
 window.onload = sincronizarData;
+function recepcao() {
+    document.getElementById('telaprincipal').style.display = 'none'
+    document.getElementById('telarecepcao').style.display = 'block'
+}
