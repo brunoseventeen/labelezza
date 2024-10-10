@@ -175,13 +175,13 @@ img {
     transform: scale(1.1);
     
 }
-#d4af37
-#ffffff
+
 .disabled {
     background-color: gray; /* Cor cinza */
     color: white; /* Texto branco */
     cursor: not-allowed; /* Muda o cursor para indicar que não está habilitado */
     pointer-events: none; /* Desabilita todos os eventos do mouse */
+    border: #333;
 }
 .area {
     margin-top: 15px;
