@@ -5,7 +5,7 @@ function liberar() {
         const mesa = document.getElementById(`mesa${i}`); // Captura cada mesa pelo ID
 
         if (mesa && mesa.classList.contains('disabled')) {
-            htmlContent += `<p>Mesa ${i} <button onclick="lib(${i})">Liberar</button></p>`;
+            htmlContent += `<p class="paragrafo-mesas">Mesa ${i} <button class="lib1" onclick="lib(${i})">Liberar</button></p>`;
         }
     }
 
