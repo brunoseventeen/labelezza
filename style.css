@@ -181,6 +181,7 @@ img {
     color: white; /* Texto branco */
     cursor: not-allowed; /* Muda o cursor para indicar que não está habilitado */
     pointer-events: none; /* Desabilita todos os eventos do mouse */
+    border: #333;
 }
 .area {
     margin-top: 15px;
