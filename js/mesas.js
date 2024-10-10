@@ -1,7 +1,7 @@
 function liberar () {
     const mesa1 = document.getElementById('mesa1')
     if (mesa1.classList.contains('disabled')) {
-        document.getElementById("mesasusadas").innerHTML = `<p>Mesa 1 <button onclick="lib1()">Liberar</button></p>`
+        document.getElementById("mesasusadas").innerHTML = `<p class="paragrafo-mesas">Mesa 1 <button class="lib1" onclick="lib1()">Liberar</button></p>`
     }
     else {
         alert('A div não possui a classe "ativo".');
