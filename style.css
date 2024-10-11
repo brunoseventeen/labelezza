@@ -6,6 +6,9 @@
 
 
 
+
+
+
 #cab {
     background-color: #810020;
     height: 55px;
@@ -31,16 +34,24 @@ h1 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     
+    
 }
 
 main {
-    background-color: #F8F4E3;
+    padding: 20px;
+    
+    
 }
 
 .calendario {
-    /* border: 2px solid black; */
-    margin-top: 20PX;
-    border-radius: 15PX;
+    margin-top: 35px;
+    border-radius: 15px;
+    padding: 20px; /* Adiciona um espaçamento interno para dar mais "respiro" ao conteúdo */
+    
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .hcalendario {
     background-color: #810020;
@@ -58,6 +69,7 @@ margin-top: px;
 .corpocal>p {
     display: inline-block;
     width: 30%;
+    margin: 0;
     
 }
 .corpocal {
@@ -86,7 +98,7 @@ margin-top: px;
 
 /* Estilo dos artigos */
 .col-menu{
-    
+    padding: 10px;
     color: #ffffff; /* Texto branco */
     font-family: 'Poppins', sans-serif;
     transition: transform 0.3s ease;
@@ -185,6 +197,7 @@ img {
 }
 .area {
     margin-top: 15px;
+    
 }
 .liberar {
     
@@ -199,9 +212,8 @@ img {
 
 
 
+
     
-    
-  /* Estilo do parágrafo */
 
 /* Estilo do parágrafo */
 .paragrafo-mesas {
@@ -245,7 +257,71 @@ button.lib1 {
     text-align: center;
 }
 
+/*fim do css da recepçao */
+/*começo do css do garçom*/
 
+
+
+.menu-category {
+    margin-top: 30px;
+    height: 100%;
     
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 2px solid  #810020;
+}
+
+.menu-item-name {
+    font-weight: bold;
+}
+
+.menu-item-price {
+    font-weight: bold;
+    color: #810020;
+}
+
+.menu-header {
+    background-color: #810020;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-button {
+    background-color: #810020;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.menu-button:hover {
+    background-color: #4b0010;
+}
+
+.pedidos{
+    background: linear-gradient(135deg, #810020, #a12b3c, #4b0010); /* Gradiente baseado na cor fornecida */
+    color: #F8F4E3; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    transition: background-color 0.3s ease; /* Transição suave ao mudar a cor */
+    display: inline-block; /* Certifica que o botão está no fluxo inline */
     
+}
+
+.pedidos:hover{
+    background: linear-gradient(135deg, #a12b3c, #810020, #4b0010); /* Inverte as cores do gradiente */
+    
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
+    filter: brightness(1.1); /* Aumenta a luminosidade ao passar o mouse */
+
+}
 

@@ -16,6 +16,11 @@ function liberar() {
     }
 }
 
+function voltar() {
+    document.getElementById("telarecepcao").style.display = "none";
+    document.getElementById("telaprincipal").style.display = "block";
+}
+
 
 function mesa (num) {
     const cliente = prompt('ola')

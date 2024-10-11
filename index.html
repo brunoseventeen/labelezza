@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous" defer></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
     <script src="/js/script.js" defer></script>
     <script src="/js/mesas.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>La Pikanha</title>
 </head>
 
 <body>
-    <div id="telaprincipal" style="display:block;">
+    <div id="telaprincipal" style="display:none;">
         <header id="cab">
             <h1>
                 La Pikanha
@@ -56,11 +57,13 @@
             <div>
                 <section class="row">
                     <article class="col op">
-                        <button id="recepcionista" class="btop" onclick="recepcao()"><img src="img/recepcionista.png" height="70"></button>
+                        <button id="recepcionista" class="btop" onclick="recepcao()"><img src="img/recepcionista.png"
+                                height="70"></button>
                         <article class="col-menu ">Recepcionista</article>
                     </article>
                     <article class="col op">
-                        <button class="btop"><img src="img/garcom.png" height="70"></button>
+                        <button id="garcom" class="btop" onclick="garcom()"><img src="img/garcom.png"
+                                height="70"></button>
                         <article class="col-menu">Garçom</article>
                     </article>
                     <article class="col op">
@@ -73,7 +76,7 @@
                     </article>
                     <article class="col op">
                         <button class="btop"><img src="img/gerente.png" height="70"></button>
-                        
+
                         <article class="col-menu">Gerente</article>
                     </article>
                 </section>
@@ -82,6 +85,8 @@
             </div>
         </main>
     </div>
+
+
     <div id="telarecepcao" style="display: none;">
         <header id="cab2">
             <h1>
@@ -177,22 +182,90 @@
                     <button id="mesa25" class="mesas" onclick="mesa(25)">25</button>
                 </article>
             </section>
-            
+
             </section>
-            <section class="row">
+            <section class="row-liberar">
                 <article class="col">
                     <button class="liberar" onclick="liberar()">
                         Liberar Mesa
                     </button>
                 </article>
+                <article class="col">
+                    <button class="liberar" onclick="voltar()">
+                        Voltar
+                    </button>
+                </article>
             </section>
-            
-                <section id="mesasusadas">
-        
 
-            </section>
+            <section id="mesasusadas"></section>
+
         </main>
     </div>
+        <div id="telagarcom" style="display: none;"></div>
+            <h1>
+                La Pikanha
+                <br>
+                <hr id="hr1">
+                Garçom
+            </h1>
+            <div class="container mt-5">
+                <h1 class="text-center">Cardápio do Garçom</h1>
+            
+                <div class="menu-category">
+                    <h3 class="menu-header">Entradas</h3>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Salada Caesar</span>
+                        <span class="menu-item-price">R$ 20,00</span>
+                        <input type="checkbox" class="form-check-input" id="entrada1">
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Bruschetta</span>
+                        <span class="menu-item-price">R$ 18,00</span>
+                        <input type="checkbox" class="form-check-input" id="entrada2">
+                    </div>
+                </div>
+            
+                <div class="menu-category">
+                    <h3 class="menu-header">Pratos Principais</h3>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Picanha</span>
+                        <span class="menu-item-price">R$ 55,00</span>
+                        <input type="checkbox" class="form-check-input" id="prato1">
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Frango Grelhado</span>
+                        <span class="menu-item-price">R$ 35,00</span>
+                        <input type="checkbox" class="form-check-input" id="prato2">
+                    </div>
+                </div>
+            
+                <div class="menu-category">
+                    <h3 class="menu-header">Bebidas</h3>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Suco Natural</span>
+                        <span class="menu-item-price">R$ 10,00</span>
+                        <input type="checkbox" class="form-check-input" id="bebida1">
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Refrigerante</span>
+                        <span class="menu-item-price">R$ 8,00</span>
+                        <input type="checkbox" class="form-check-input" id="bebida2">
+                    </div>
+                </div>
+            
+                <button class="pedidos" onclick="confirmarPedido()">Confirmar Pedido</button>
+
+                <button class="pedidos" onclick="voltar()">
+                    Voltar
+                </button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    
 </body>
 
 </html>

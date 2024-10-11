@@ -77,10 +77,22 @@ function sincronizarData() {
     document.getElementById('diaDaSemana').textContent = diaDaSemana;
     document.getElementById('diaDaSemanaM').textContent = diaDaSemanaAmanha;
 }
-
 // Chama a função quando a página carregar
 window.onload = sincronizarData;
 function recepcao() {
     document.getElementById('telaprincipal').style.display = 'none'
     document.getElementById('telarecepcao').style.display = 'block'
+    
 }
+
+function garcom() {
+    document.getElementById('telaprincipal').style.display = 'none'
+    document.getElementById('telarecepcao').style.display = 'none'
+    document.getElementById('telagarcom').style.display = 'block'
+    
+    
+    
+
+}
+
+
