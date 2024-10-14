@@ -97,6 +97,7 @@ function garcom() {
 function voltar() {
     document.getElementById("telarecepcao").style.display = "none";
     document.getElementById("telaprincipal").style.display = "block";
+    document.getElementById('telagarcom').style.display = "none"
 }
 
 
