@@ -32,7 +32,7 @@ h1 {
     font-weight: weight;
     font-style: normal;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     
     
 }
@@ -324,4 +324,13 @@ button.lib1 {
     filter: brightness(1.1); /* Aumenta a luminosidade ao passar o mouse */
 
 }
-
+#h2gerente {
+    text-align: center;
+    font-family: "Lora", serif;
+    color: #D4AF37;
+    background-color: #810020;
+    margin: 0px 150px;
+}
+.colgerente {
+    text-align: center;
+}
