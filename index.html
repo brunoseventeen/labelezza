@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <div id="telaprincipal" style="display:none;">
+    <div id="telaprincipal" style="display:block;">
         <header id="cab">
             <h1>
                 La Pikanha
@@ -57,7 +57,8 @@
             <div>
                 <section class="row">
                     <article class="col op" onclick="recepcao()">
-                        <button id="recepcionista" class="btop" onclick="recepcao()"><img src="img/recepcionista.png" height="70"></button>
+                        <button id="recepcionista" class="btop" onclick="recepcao()"><img src="img/recepcionista.png"
+                                height="70"></button>
                         <article class="col-menu ">Recepcionista</article>
                     </article>
                     <article class="col op">
@@ -197,74 +198,68 @@
             </section>
 
             <section id="mesasusadas"></section>
-
-        </main>
     </div>
-        <div id="telagarcom" style="display: none;"></div>
-            <h1>
-                La Pikanha
-                <br>
-                <hr id="hr1">
-                Garçom
-            </h1>
-            <div class="container mt-5">
-                <h1 class="text-center">Cardápio do Garçom</h1>
-            
-                <div class="menu-category">
-                    <h3 class="menu-header">Entradas</h3>
-                    <div class="menu-item">
-                        <span class="menu-item-name">Salada Caesar</span>
-                        <span class="menu-item-price">R$ 20,00</span>
-                        <input type="checkbox" class="form-check-input" id="entrada1">
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-item-name">Bruschetta</span>
-                        <span class="menu-item-price">R$ 18,00</span>
-                        <input type="checkbox" class="form-check-input" id="entrada2">
-                    </div>
-                </div>
-            
-                <div class="menu-category">
-                    <h3 class="menu-header">Pratos Principais</h3>
-                    <div class="menu-item">
-                        <span class="menu-item-name">Picanha</span>
-                        <span class="menu-item-price">R$ 55,00</span>
-                        <input type="checkbox" class="form-check-input" id="prato1">
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-item-name">Frango Grelhado</span>
-                        <span class="menu-item-price">R$ 35,00</span>
-                        <input type="checkbox" class="form-check-input" id="prato2">
-                    </div>
-                </div>
-            
-                <div class="menu-category">
-                    <h3 class="menu-header">Bebidas</h3>
-                    <div class="menu-item">
-                        <span class="menu-item-name">Suco Natural</span>
-                        <span class="menu-item-price">R$ 10,00</span>
-                        <input type="checkbox" class="form-check-input" id="bebida1">
-                    </div>
-                    <div class="menu-item">
-                        <span class="menu-item-name">Refrigerante</span>
-                        <span class="menu-item-price">R$ 8,00</span>
-                        <input type="checkbox" class="form-check-input" id="bebida2">
-                    </div>
-                </div>
-            
-                <button class="pedidos" onclick="confirmarPedido()">Confirmar Pedido</button>
+    <div id="telagarcom" style="display: none;">
+        <h1>
+            La Pikanha
+            <br>
+            <hr id="hr1">
+            Garçom
+        </h1>
+        <div class="container mt-5">
+            <h1 class="text-center">Cardápio do Garçom</h1>
 
-                <button class="pedidos" onclick="voltar()">
-                    Voltar
-                </button>
+            <div class="menu-category">
+                <h3 class="menu-header">Entradas</h3>
+                <div class="menu-item">
+                    <span class="menu-item-name">Salada Caesar</span>
+                    <span class="menu-item-price">R$ 20,00</span>
+                    <input type="checkbox" class="form-check-input" id="entrada1">
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">Bruschetta</span>
+                    <span class="menu-item-price">R$ 18,00</span>
+                    <input type="checkbox" class="form-check-input" id="entrada2">
                 </div>
             </div>
 
+            <div class="menu-category">
+                <h3 class="menu-header">Pratos Principais</h3>
+                <div class="menu-item">
+                    <span class="menu-item-name">Picanha</span>
+                    <span class="menu-item-price">R$ 55,00</span>
+                    <input type="checkbox" class="form-check-input" id="prato1">
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">Frango Grelhado</span>
+                    <span class="menu-item-price">R$ 35,00</span>
+                    <input type="checkbox" class="form-check-input" id="prato2">
+                </div>
+            </div>
 
+            <div class="menu-category">
+                <h3 class="menu-header">Bebidas</h3>
+                <div class="menu-item">
+                    <span class="menu-item-name">Suco Natural</span>
+                    <span class="menu-item-price">R$ 10,00</span>
+                    <input type="checkbox" class="form-check-input" id="bebida1">
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">Refrigerante</span>
+                    <span class="menu-item-price">R$ 8,00</span>
+                    <input type="checkbox" class="form-check-input" id="bebida2">
+                </div>
+            </div>
+
+            <button class="pedidos" onclick="confirmarPedido()">Confirmar Pedido</button>
+
+            <button class="pedidos" onclick="voltar()">
+                Voltar
+            </button>
         </div>
-
-
-    
+    </div>
+    </div>
+    </main>
 </body>
 
 </html>
