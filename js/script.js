@@ -79,30 +79,9 @@ function sincronizarData() {
 }
 // Chama a função quando a página carregar
 window.onload = sincronizarData;
-function recepcao() {
-    document.getElementById('telaprincipal').style.display = 'none'
-    document.getElementById('telarecepcao').style.display = 'block'
-    
-}
 
-function garcom() {
-    document.getElementById('telaprincipal').style.display = 'none'
-    document.getElementById('telarecepcao').style.display = 'none'
-    document.getElementById('telagarcom').style.display = 'block'
-}
-function voltar() {
-    document.getElementById("telarecepcao").style.display = "none";
-    document.getElementById("telaprincipal").style.display = "block";
-    document.getElementById('telagarcom').style.display = "none"
-}
-function voltagarcom() {
-    document.getElementById("telarecepcao").style.display = "none";
-    document.getElementById("telaprincipal").style.display = "block";
-    document.getElementById('telagarcom').style.display = "none"
-}
-function gerente() {
-    document.getElementById('telaprincipal').style.display = 'none'
-    document.getElementById('telagerente').style.display = 'block'
-}
+
+
+
 
 

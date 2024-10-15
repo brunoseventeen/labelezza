@@ -2,11 +2,16 @@
     margin: 0px;
     padding: 0px;
     background-color: #F8F4E3;
+    /* border: 2px solid black; */
 }
 
 
-
-
+body {
+    background-color: #F8F4E3;
+}
+a {
+    text-decoration: none;
+}
 
 
 #cab {
@@ -39,8 +44,6 @@ h1 {
 
 main {
     padding: 20px;
-    
-    
 }
 
 .calendario {
@@ -262,68 +265,7 @@ button.lib1 {
 
 
 
-.menu-category {
-    margin-top: 30px;
-    height: 100%;
-    
-}
 
-.menu-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    border-bottom: 2px solid  #810020;
-}
-
-.menu-item-name {
-    font-weight: bold;
-}
-
-.menu-item-price {
-    font-weight: bold;
-    color: #810020;
-}
-
-.menu-header {
-    background-color: #810020;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.menu-button {
-    background-color: #810020;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 20px;
-    width: 100%;
-}
-
-.menu-button:hover {
-    background-color: #4b0010;
-}
-
-.pedidos{
-    background: linear-gradient(135deg, #810020, #a12b3c, #4b0010); /* Gradiente baseado na cor fornecida */
-    color: #F8F4E3; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Muda o cursor ao passar por cima */
-    transition: background-color 0.3s ease; /* Transição suave ao mudar a cor */
-    display: inline-block; /* Certifica que o botão está no fluxo inline */
-    
-}
-
-.pedidos:hover{
-    background: linear-gradient(135deg, #a12b3c, #810020, #4b0010); /* Inverte as cores do gradiente */
-    
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
-    filter: brightness(1.1); /* Aumenta a luminosidade ao passar o mouse */
-
-}
 #h2gerente {
     text-align: center;
     font-family: "Lora", serif;

@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
@@ -25,301 +25,94 @@
 </head>
 
 <body>
-    <div id="telaprincipal" style="display:none;">
-        <header id="cab">
-            <h1>
-                La Pikanha
-            </h1>
-        </header>
-        <main class="container">
-            <div class="calendario">
-                <div class="apoio">
-                    <div class="hcalendario">
-                        <span id="mes"></span>
-                    </div>
-                    <div class="corpocal">
-                        <p>
-                            <span id="diaDaSemanam"></span>
-                            <br>
-                            <span id="datam"></span>
-                        </p>
-                        <p class="prf">
-                            <span id="diaDaSemana"></span>
-                            <br>
-                            <span id="data"></span>
-                        </p>
-                        <p>
-                            <span id="diaDaSemanaM"></span>
-                            <br>
-                            <span id="dataM"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <section class="row">
-                    <article class="col op" onclick="recepcao()">
-                        <button id="recepcionista" class="btop" onclick="recepcao()"><img src="img/recepcionista.png"
-                                height="70"></button>
-                        <article class="col-menu ">Recepcionista</article>
-                    </article>
-                    <article class="col op" onclick="garcom()">
-                        <button id="garcom" class="btop"><img src="img/garcom.png" height="70"></button>
-                        <article class="col-menu">Garçom</article>
-                    </article>
-                    <article class="col op" onclick="garcom()">
-                        <button class="btop"><img src="img/chef-masculino.png" height="70"></button>
-                        <article class="col-menu">Cozinheiro</article>
-                    </article>
-                    <article class="col op" onclick="garcom()">
-                        <button class="btop"><img src="img/money-bag.png" height="70"></button>
-                        <article class="col-menu">Caixa</article>
-                    </article>
-                    <article class="col op" onclick="gerente()">
-                        <button class="btop"><img src="img/gerente.png" height="70"></button>
 
-                        <article class="col-menu">Gerente</article>
-                    </article>
-                </section>
-                <section class="row">
-                </section>
-            </div>
-        </main>
-    </div>
-    <div id="telarecepcao" style="display: none;">
-        <header id="cab2">
-            <h1>
-                La Pikanha
-                <br>
-                <hr id="hr1">
-                Recepção
-            </h1>
-        </header>
-        <main class="container">
-            <section class="row area">
-                <article class="col">
-                    <button id="mesa1" class="mesas" onclick="mesa(1)">1</button>
-                </article>
-                <article class="col">
-                    <button id="mesa2" class="mesas" onclick="mesa(2)">2</button>
-                </article>
-                <article class="col">
-                    <button id="mesa3" class="mesas" onclick="mesa(3)">3</button>
-                </article>
-                <article class="col">
-                    <button id="mesa4" class="mesas" onclick="mesa(4)">4</button>
-                </article>
-                <article class="col">
-                    <button id="mesa5" class="mesas" onclick="mesa(5)">5</button>
-                </article>
-            </section>
-            <section class="row area">
-                <article class="col">
-                    <button id="mesa6" class="mesas" onclick="mesa(6)">6</button>
-                </article>
-                <article class="col">
-                    <button id="mesa7" class="mesas" onclick="mesa(7)">7</button>
-                </article>
-                <article class="col">
-                    <button id="mesa8" class="mesas" onclick="mesa(8)">8</button>
-                </article>
-                <article class="col">
-                    <button id="mesa9" class="mesas" onclick="mesa(9)">9</button>
-                </article>
-                <article class="col">
-                    <button id="mesa10" class="mesas" onclick="mesa(10)">10</button>
-                </article>
-            </section>
-            <section class="row area">
-                <article class="col">
-                    <button id="mesa11" class="mesas" onclick="mesa(11)">11</button>
-                </article>
-                <article class="col">
-                    <button id="mesa12" class="mesas" onclick="mesa(12)">12</button>
-                </article>
-                <article class="col">
-                    <button id="mesa13" class="mesas" onclick="mesa(13)">13</button>
-                </article>
-                <article class="col">
-                    <button id="mesa14" class="mesas" onclick="mesa(14)">14</button>
-                </article>
-                <article class="col">
-                    <button id="mesa15" class="mesas" onclick="mesa(15)">15</button>
-                </article>
-            </section>
-            <section class="row area">
-                <article class="col">
-                    <button id="mesa16" class="mesas" onclick="mesa(16)">16</button>
-                </article>
-                <article class="col">
-                    <button id="mesa17" class="mesas" onclick="mesa(17)">17</button>
-                </article>
-                <article class="col">
-                    <button id="mesa18" class="mesas" onclick="mesa(18)">18</button>
-                </article>
-                <article class="col">
-                    <button id="mesa19" class="mesas" onclick="mesa(19)">19</button>
-                </article>
-                <article class="col">
-                    <button id="mesa20" class="mesas" onclick="mesa(20)">20</button>
-                </article>
-            </section>
-            <section class="row area">
-                <article class="col">
-                    <button id="mesa21" class="mesas" onclick="mesa(21)">21</button>
-                </article>
-                <article class="col">
-                    <button id="mesa22" class="mesas" onclick="mesa(22)">22</button>
-                </article>
-                <article class="col">
-                    <button id="mesa23" class="mesas" onclick="mesa(23)">23</button>
-                </article>
-                <article class="col">
-                    <button id="mesa24" class="mesas" onclick="mesa(24)">24</button>
-                </article>
-                <article class="col">
-                    <button id="mesa25" class="mesas" onclick="mesa(25)">25</button>
-                </article>
-            </section>
-
-            </section>
-            <section class="row-liberar">
-                <article class="col">
-                    <button class="liberar" onclick="liberar()">
-                        Liberar Mesa
-                    </button>
-                </article>
-                <article class="col">
-                    <button class="liberar" onclick="voltar()">
-                        Voltar
-                    </button>
-                </article>
-            </section>
-
-            <section id="mesasusadas"></section>
-    </div>
-    <div id="telagarcom" style="display:none;">
-
+    <header id="cab">
         <h1>
             La Pikanha
-            <br>
-            <hr id="hr1">
-            Garçom
         </h1>
-        <div class="container mt-5">
-            <h1 class="text-center">Cardápio do Garçom</h1>
-            <div class="menu-category">
-                <h3 class="menu-header">Entradas</h3>
-                <div class="menu-item">
-                    <span class="menu-item-name">Salada Caesar</span>
-                    <span class="menu-item-price">R$ 20,00</span>
-                    <input type="checkbox" class="form-check-input" id="entrada1">
+    </header>
+    <main class="container">
+        <div class="calendario">
+            <div class="apoio">
+                <div class="hcalendario">
+                    <span id="mes"></span>
                 </div>
-                <div class="menu-item">
-                    <span class="menu-item-name">Bruschetta</span>
-                    <span class="menu-item-price">R$ 18,00</span>
-                    <input type="checkbox" class="form-check-input" id="entrada2">
-                </div>
-            </div>
-
-
-            <div class="menu-category">
-                <h3 class="menu-header">Pratos Principais</h3>
-                <div class="menu-item">
-                    <span class="menu-item-name">Picanha</span>
-                    <span class="menu-item-price">R$ 55,00</span>
-                    <input type="checkbox" class="form-check-input" id="prato1">
-                </div>
-                <div class="menu-item">
-                    <span class="menu-item-name">Frango Grelhado</span>
-                    <span class="menu-item-price">R$ 35,00</span>
-                    <input type="checkbox" class="form-check-input" id="prato2">
+                <div class="corpocal">
+                    <p>
+                        <span id="diaDaSemanam"></span>
+                        <br>
+                        <span id="datam"></span>
+                    </p>
+                    <p class="prf">
+                        <span id="diaDaSemana"></span>
+                        <br>
+                        <span id="data"></span>
+                    </p>
+                    <p>
+                        <span id="diaDaSemanaM"></span>
+                        <br>
+                        <span id="dataM"></span>
+                    </p>
                 </div>
             </div>
-
-
-
-            <div class="menu-category">
-                <h3 class="menu-header">Bebidas</h3>
-                <div class="menu-item">
-                    <span class="menu-item-name">Suco Natural</span>
-                    <span class="menu-item-price">R$ 10,00</span>
-                    <input type="checkbox" class="form-check-input" id="bebida1">
-                </div>
-                <div class="menu-item">
-                    <span class="menu-item-name">Refrigerante</span>
-                    <span class="menu-item-price">R$ 8,00</span>
-                    <input type="checkbox" class="form-check-input" id="bebida2">
-                </div>
-            </div>
-
-            <button class="pedidos" onclick="confirmarPedido()">Confirmar Pedido</button>
-
-            <button class="pedidos" onclick="voltagarcom()">
-                Voltar
-            </button>
         </div>
-    </div>
-    <div id="telagerente" style="display: block;">
-        <h1>
-            La Pikanha
-            <br>
-            <hr id="hr1">
-            Gerente
-        </h1> 
-        <br>
-        
-        <div class="container-mg">
-            <h2 id="h2gerente">
-                Controle
-            </h2>
+        <div>
             <section class="row">
-                <article class="col colgerente">
-                    <button class="btop">
-                        mesas
-                    </button>
+                <article class="col">
+                    <a href="pages/recepcao.html">
+                    <div class="op">
+                        <button id="recepcionista" class="btop">
+                            <img src="img/recepcionista.png" height="70">
+                        </button>
+                        <p class="col-menu ">Recepcionista</p>
+                    </div>
+                </a>
+            </article>
+                <article class="col">
+                    <a href="pages/garcom.html">
+                        <div class="col op">
+                            <button id="garcom" class="btop"><img src="img/garcom.png" height="70"></button>
+                            <p class="col-menu">Garçom</p>
+                        </div>
+                    </a>
                 </article>
-                <article class="col colgerente">
-                    <button class="btop">
-                        contas pendentes
-                    </button>
+                <article class="col">
+                    <a href="/pages/cozinheiro.html">
+                        <div class="col op">
+                            <button class="btop">
+                                <img src="img/chef-masculino.png" height="70">
+                            </button>
+                            <p class="col-menu">Cozinheiro</p>
+                        </div>
+                    </a>
                 </article>
-                <article class="col colgerente">
-                    <button class="btop">
-                        cardapio
-                    </button>
+                <article class="col">
+                    <a href="pages/caixa.html">
+                        <div class="col op">
+                            <button class="btop">
+                                <img src="img/money-bag.png" height="70">
+                            </button>
+                            <p class="col-menu">Caixa</p>
+                        </div>
+                    </a>
                 </article>
-                <article class="col colgerente">
-                    <button class="btop">
-                        reservas
-                    </button>
+                <article class="col">
+                    <a href="pages/gerente.html">
+                        <div class="col op">
+                            <button class="btop">
+                                <img src="img/gerente.png" height="70">
+                            </button>
+    
+                            <p class="col-menu">Gerente</p>
+                        </div>
+                    </a>
                 </article>
             </section>
             <section class="row">
-                <article class="col colgerente">
-                    <button class="btop">
-                        pedidos
-                    </button>
-                </article>
-                <article class="col colgerente">
-                    <button class="btop">
-                        valor vendido
-                    </button>
-                </article>
-                <article class="col colgerente">
-                    <button class="btop">
-                        estoques
-                    </button>
-                </article>
-                <article class="col colgerente">
-                    <button class="btop">
-                        Pesquisas
-                    </button>
-                </article>
             </section>
         </div>
-    </div>
     </main>
+
 </body>
 
 </html>
