@@ -1,0 +1,59 @@
+h2{
+    margin-bottom: 20px;
+    color: #01050a;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+/* Estilo da área onde os pedidos são exibidos */
+
+
+.pedidos {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pedidos h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Área onde os pedidos vão aparecer */
+.pedidos-area {
+    background-color: #fafafa;
+    border-radius: 12px;
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e3e3e3;
+}
+
+
+
+button.voltar{
+    text-align: center;
+    margin-left: 890px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
