@@ -23,7 +23,7 @@ function voltar() {
 
 
 function mesa (num) {
-    const cliente = prompt('ola')
+    const cliente = prompt('Digite o seu CPF')
     if (cliente !== null) {
         localStorage.setItem('cliente',cliente)
         alert('cliente registrado: ' + cliente + ' na mesa '+num);
