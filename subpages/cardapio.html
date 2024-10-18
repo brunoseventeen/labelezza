@@ -20,7 +20,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Cardápio</title>
     <link rel="icon" type="image/x-icon" href="/img/chef-masculino.png">
 </head>
@@ -35,62 +35,63 @@
         </h1>
     </header>
     <main class="container">
-        <section class="row">
-            <div class="row g-3">
-                <div class="col-sm-7">
-                    <input type="text" id="nomecomida" class="form-control" placeholder="Nome Da Comida" aria-label="City">
-                </div>
-                <div class="col-sm">
-                    <input type="number" id="valorcomida" class="form-control" placeholder="Valor" aria-label="State">
-                </div>
-                <div class="col-sm">
-                    <select id="tipodecomida" class="form-control" aria-label="Zip">
-                        <option value="comida">Comida</option>
-                        <option value="bebida">Bebida</option>
-                        <option value="sobremesa">Sobremesa</option>
-                    </select>
-                </div>
+        <section class="row mb-4">
+            <div class="col-sm-7">
+                <input type="text" id="nomecomida" class="form-control" placeholder="Nome da Comida" required>
+            </div>
+            <div class="col-sm">
+                <input type="number" id="valorcomida" class="form-control" placeholder="Valor" required>
+            </div>
+            <div class="col-sm">
+                <select id="tipodecomida" class="form-control">
+                    <option value="comidas">Comida</option>
+                    <option value="bebidas">Bebida</option>
+                    <option value="sobremesas">Sobremesa</option>
+                </select>
             </div>
         </section>
-        <section class="row row2">
-            <div class="d-grid gap-2">
-                <button class="btn btn-primary" type="button" onclick="adicionarcomida()">Adicionar</button>
-            </div>
+        <section class="mb-4">
+            <button class="btn btn-primary" type="button" onclick="adicionarComida()">Adicionar</button>
         </section>
         <section>
-            <table>
+            <h3>Comidas</h3>
+            <table class="table">
                 <thead>
                     <tr>
-                        <th>Comidas</th>
-                        <th>Valores</th>
+                        <th>Nome</th>
+                        <th>Valor</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
-                <tbody id="comidasviw"></tbody>
+                <tbody id="comidas"></tbody>
             </table>
-            <table>
+
+            <h3>Bebidas</h3>
+            <table class="table">
                 <thead>
                     <tr>
-                        <th>Bebidas</th>
-                        <th>Valores</th>
+                        <th>Nome</th>
+                        <th>Valor</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
-                <tbody id="bebidasviw"></tbody>
+                <tbody id="bebidas"></tbody>
             </table>
-            <table>
+
+            <h3>Sobremesas</h3>
+            <table class="table">
                 <thead>
                     <tr>
-                        <th>Sobremesas</th>
-                        <th>Valores</th>
+                        <th>Nome</th>
+                        <th>Valor</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
-                <tbody id="sobremesasviw"></tbody>
+                <tbody id="sobremesas"></tbody>
             </table>
         </section>
         <a href="/pages/gerente.html">
-            <button class="liberar">Voltar</button>
+            <button class="btn btn-secondary liberar">Voltar</button>
         </a>
     </main>
     
