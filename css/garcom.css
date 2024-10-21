@@ -171,6 +171,9 @@ button{
 button:hover {
     background-color: #3498db; /* azul claro */
 }
+.voltar{
+    margin-left: 890px;
+}
 
 
 
