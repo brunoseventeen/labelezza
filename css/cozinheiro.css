@@ -1,19 +1,20 @@
 h2{
-    margin-bottom: 20px;
-    color: #01050a;
+    margin-bottom: 10px;
+    color: #000000;
     text-align: center;
-    font-size: 24px;
+    font-size: 27px;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 50;
     font-family: 'Poppins', sans-serif;
 }
+
 /* Estilo da área onde os pedidos são exibidos */
 
 
 .pedidos {
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #810020 0%, #a12b3c 40%, #4b0010 100%);
+    border-radius: 25px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, -.15);
     padding: 30px;
     max-width: 600px;
     margin: 0 auto;
@@ -21,28 +22,34 @@ h2{
 }
 
 .pedidos h2 {
-    color: #2c3e50;
+    color: #1b1a14;
+    background: linear-gradient(135deg, #000000 00%, #a12b3c 40%, #30000b 100%);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 1000;
     margin-bottom: 20px;
+    border-radius: 25px;
 }
 
-/* Área onde os pedidos vão aparecer */
+
 .pedidos-area {
-    background-color: #fafafa;
+    background-color: #ffffff;
     border-radius: 12px;
     padding: 20px;
     max-height: 300px;
     overflow-y: auto;
-    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e3e3e3;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 4px solid #000000;
 }
+
+
 
 
 
 button.voltar{
     text-align: center;
     margin-left: 890px;
+
+
 }
 
 

@@ -87,6 +87,7 @@ button.liberar{
     color:  #F8F4E3 ; 
     border-radius: 8px;
     padding: 8px 20px;
-    font-family: "Montserrat" , sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     margin-top: 35px;
 }

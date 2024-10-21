@@ -188,9 +188,10 @@ img {
     color:  #F8F4E3 ; 
     border-radius: 8px;
     padding: 8px 20px;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-top: 35px;
     text-align: center;
+    font-weight: 600;
 }
 
 
