@@ -73,12 +73,17 @@
                     <tbody id="sobremesas"></tbody>
                 </table>
                 <article class="row">
+                    <div class="col">
+                        <label for="mesa">Mesa:</label>
+                        <input type="number" id="mesa" placeholder="Número da mesa" required>
+                    </div>
                     <div class="col total">Total</div>
                     <div class="col total-valor" id="totalDisplay">0,00 R$</div>
                     <div class="col">
                         <button id="finalizar" onclick="finalizarPedidoGarcom()">Finalizar Pedido</button>
                     </div>
                 </article>
+                
                 <article class="row">
                     <div id="telo" class="container"></div>
                 </article>

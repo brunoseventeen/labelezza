@@ -50,14 +50,39 @@ function exibirItensPedido() {
     });
 }
 
-function finalizarPedido() {
-    alert(`Pedido finalizado!\nTotal: R$ ${total.toFixed(2).replace('.', ',')}`);
-    
-    // Resetar total e itensPedido
-    total = 0;
+
+
+function finalizarPedidoGarcom() {
+    if (itensPedido.length === 0) {
+        alert("Não há itens no pedido!");
+        return;
+    }
+
+    const mesa = document.getElementById("mesa").value; // Captura o número da mesa
+    if (!mesa) {
+        alert("Por favor, informe o número da mesa!");
+        return;
+    }
+
+    const pedidoId = Date.now(); // Usar timestamp como ID único
+    const pedidoCompleto = {
+        id: pedidoId,
+        mesa: mesa, // Adiciona o número da mesa
+        itens: itensPedido
+    };
+
+    const pedidosExistentes = JSON.parse(localStorage.getItem("pedidosCozinheiro")) || [];
+    pedidosExistentes.push(pedidoCompleto);
+    localStorage.setItem("pedidosCozinheiro", JSON.stringify(pedidosExistentes));
+
+    // Limpar o pedido do garçom
     itensPedido = [];
-    
-    atualizarTotal(); // Atualiza a exibição do total
-    exibirItensPedido(); // Limpa os itens exibidos
+    total = 0;
+    atualizarTotal();
+    exibirItensPedido();
+    document.getElementById("mesa").value = ''; // Limpa o campo da mesa
+
+    alert("Pedido finalizado e enviado para a cozinha!");
 }
+
 
