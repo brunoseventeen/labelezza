@@ -15,7 +15,7 @@ function adicionarItemTabela(tipo, nome, valor) {
         <td>${nome}</td>
         <td>${valor}</td>
         <td>
-            <button class="btn btn-primary btn-sm" onclick="adicionarAoPedido('${nome}', ${valor})">Adicionar ao Pedido</button>
+            <button class="adicionarpedido" onclick="adicionarAoPedido('${nome}', ${valor})">Adicionar ao Pedido</button>
         </td>
     `;
     tbody.appendChild(row);
