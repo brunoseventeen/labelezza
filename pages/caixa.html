@@ -40,8 +40,8 @@
                     <h4>Registrar Pagamento</h4>
                     <form id="payment-form">
                         <div class="mb-3">
-                            <label for="order-number" class="form-label">Número do Pedido</label>
-                            <input type="number" class="form-control" id="order-number" placeholder="Insira o número do pedido">
+                            <label for="order-number" class="form-label">Número da Mesa</label>
+                            <input type="number" class="form-control" id="order-number" placeholder="Insira o número da mesa">
                         </div>
                         <div class="mb-3">
                             <label for="total-amount" class="form-label">Valor Total</label>
@@ -52,6 +52,8 @@
                             <select class="form-control" id="payment-method">
                                 <option value="dinheiro">Dinheiro</option>
                                 <option value="cartao">Cartão</option>
+                                <option value="cartao">Pix</option>
+
                             </select>
                         </div>
                         <div class="mb-3" id="cash-payment-section" style="display:none;">
@@ -80,7 +82,9 @@
             <button class="voltar">
                 Voltar
             </button>
+
         </a>
+        
     </main>
 </body>
 </html>

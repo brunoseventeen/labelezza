@@ -75,6 +75,10 @@ function finalizarPedidoGarcom() {
     pedidosExistentes.push(pedidoCompleto);
     localStorage.setItem("pedidosCozinheiro", JSON.stringify(pedidosExistentes));
 
+
+    
+
+
     // Limpar o pedido do garçom
     itensPedido = [];
     total = 0;

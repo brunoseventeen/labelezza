@@ -63,3 +63,7 @@ document.getElementById('order-number').addEventListener('change', function() {
         document.getElementById('total-amount').value = '';
     }
 });
+
+
+
+

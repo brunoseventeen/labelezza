@@ -51,7 +51,23 @@ h4::after {
 
 .form-control::placeholder {
     color: #0f0f0f;
+
 }
+
+    /* Para remover setas navegadores Webkit (Chrome, Safari, Edge) */
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        
+}
+
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    
+}
+
 
 
 
