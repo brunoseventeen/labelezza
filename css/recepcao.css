@@ -44,14 +44,20 @@
 .paragrafo-mesas {
     font-family: 'Arial', sans-serif; /* Fonte moderna */
     font-size: 18px; /* Tamanho da fonte */
-    color: #333; /* Cor do texto */
+    color: #000000; /* Cor do texto */
     padding: 40px; /* Espaçamento interno */
-    margin-left:280px;
     border-radius: 10px; /* Bordas arredondadas */
-    text-align: right; /* Centraliza o texto */
+    text-align: right; /* Alinha o texto à direita */
     max-width: 400px; /* Limita a largura máxima */
     background: none; /* Remove o fundo branco */
     box-shadow: none; /* Remove a sombra */
+    display: flex;
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Alinha os elementos verticalmente */
+    gap: 20px; /* Espaçamento entre os parágrafos */
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha, se necessário */
+    margin-left: 410px;
+    flex: 1; /* Distribui o espaço igualmente entre os parágrafos */
 }
 
 
@@ -90,4 +96,17 @@ button.liberar{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin-top: 35px;
+    
+}
+
+.row-liberar {
+    display: flex; /* Usando Flexbox para alinhar os elementos lado a lado */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-top: 20px; /* Adiciona margem superior se necessário */
+}
+
+.col {
+    flex: 1; /* Distribui o espaço igualmente entre os botões */
+    text-align: center; /* Centraliza o texto dentro de cada coluna */
 }

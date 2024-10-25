@@ -238,7 +238,7 @@ label {
 input[type="number"] {
     padding: 8px;
     font-size: 16px;
-    border: 3px solid  #600013;
+    border: 3px solid #D4AF37;;
     border-radius: 4px;
     width: 60%;
     box-sizing: border-box;
@@ -249,7 +249,7 @@ input[type="number"] {
 }
 
 input[type="number"]:focus {
-    border-color: #0a0a0a; 
+    border-color:#b49941;; 
     outline: none;
     box-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
 }

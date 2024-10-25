@@ -44,11 +44,10 @@ h1 {
     font-weight: weight;
     font-style: normal;
     text-align: center;
-    
-    /* font-family: 'Poppins', sans-serif; */
-
-
+    font-family: 'Poppins', sans-serif; 
 }
+
+
 
 main {
     padding: 20px;
