@@ -46,20 +46,20 @@
                         <div class="mb-3">
                             <label for="total-amount" class="form-label">Valor Total</label>
                             <input type="text" class="form-control" id="total-amount" placeholder="R$ 0,00" disabled>
+                        
+                                <label for="payment-method" class="form-label">Forma de Pagamento</label>
+                                <select class="form-control" id="payment-method">
+                                    <option value="">Selecione a forma de pagamento</option>
+                                    <option value="dinheiro">Dinheiro</option>
+                                    <option value="cartao">Cartão</option>
+                                    <option value="pix">Pix</option>
+                                </select>
                         </div>
-                        <div class="mb-3">
-                            <label for="payment-method" class="form-label">Forma de Pagamento</label>
-                            <select class="form-control" id="payment-method">
-                                <option value="dinheiro">Dinheiro</option>
-                                <option value="cartao">Cartão</option>
-                                <option value="cartao">Pix</option>
-
-                            </select>
-                        </div>
-                        <div class="mb-3" id="cash-payment-section" style="display:none;">
-                            <label for="cash-received" class="form-label">Valor Recebido</label>
-                            <input type="number" class="form-control" id="cash-received" placeholder="Insira o valor recebido">
-                        </div>
+                            <div class="mb-3" id="cash-payment-section" style="display:none;">
+                                <label for="cash-received" class="form-label">Valor Recebido</label>
+                                <input type="number" class="form-control" id="cash-received" placeholder="Insira o valor recebido">
+                            </div>
+                            
                         <button type="button" id="confirmar">Confirmar Pagamento</button>
                     </form>
                 </div>

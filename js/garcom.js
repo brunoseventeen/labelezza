@@ -68,7 +68,8 @@ function finalizarPedidoGarcom() {
     const pedidoCompleto = {
         id: pedidoId,
         mesa: mesa, // Adiciona o número da mesa
-        itens: itensPedido
+        itens: itensPedido,
+        total: total
     };
 
     const pedidosExistentes = JSON.parse(localStorage.getItem("pedidosCozinheiro")) || [];

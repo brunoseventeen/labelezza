@@ -1,9 +1,24 @@
+document.getElementById('order-number').addEventListener('change', function() {
+    const mesa = document.getElementById('order-number').value;
+
+    // Buscar pedidos armazenados no localStorage
+    const pedidos = JSON.parse(localStorage.getItem("pedidosCozinheiro")) || [];
+    const pedido = pedidos.find(p => p.mesa === mesa);
+
+    if (pedido) {
+        document.getElementById('total-amount').value = pedido.total.toFixed(2).replace('.', ',');
+    } else {
+        document.getElementById('total-amount').value = '';
+        alert('Pedido não encontrado para esta mesa.');
+    }
+});
+
 let totalpedidos = 0;
 let totalrecebido = 0;
 
 document.getElementById('confirmar').addEventListener('click', function() {
     const orderNumber = document.getElementById('order-number').value;
-    const totalAmount = parseFloat(document.getElementById('total-amount').value);
+    const totalAmount = parseFloat(document.getElementById('total-amount').value.replace(',', '.')); // Converte o valor para float
     const paymentMethod = document.getElementById('payment-method').value;
     let troco = 0;
 
@@ -15,6 +30,7 @@ document.getElementById('confirmar').addEventListener('click', function() {
         if (paymentMethod === 'dinheiro') {
             const cashReceived = parseFloat(document.getElementById('cash-received').value);
 
+            // Verifica se o valor recebido é maior ou igual ao total
             if (cashReceived && cashReceived >= totalAmount) {
                 troco = cashReceived - totalAmount;
             } else {
@@ -25,8 +41,8 @@ document.getElementById('confirmar').addEventListener('click', function() {
 
         // Atualizar resumo do caixa
         document.getElementById('total-pedidos').innerText = totalpedidos;
-        document.getElementById('total-recebido').innerText = totalrecebido.toFixed(2);
-        document.getElementById('troco').innerText = troco.toFixed(2);
+        document.getElementById('total-recebido').innerText = totalrecebido.toFixed(2).replace('.', ',');
+        document.getElementById('troco').innerText = troco.toFixed(2).replace('.', ',');
 
         // Limpar formulário
         document.getElementById('payment-form').reset();
@@ -39,6 +55,8 @@ document.getElementById('confirmar').addEventListener('click', function() {
 // Exibir campo de valor recebido se a forma de pagamento for "Dinheiro"
 document.getElementById('payment-method').addEventListener('change', function() {
     const paymentMethod = document.getElementById('payment-method').value;
+    console.log('Forma de pagamento selecionada:', paymentMethod); // Verifica se o evento está sendo acionado
+    
     if (paymentMethod === 'dinheiro') {
         document.getElementById('cash-payment-section').style.display = 'block';
     } else {
@@ -46,23 +64,9 @@ document.getElementById('payment-method').addEventListener('change', function() 
     }
 });
 
-// Simula a busca do valor total ao inserir o número do pedido
-document.getElementById('order-number').addEventListener('change', function() {
-    const orderNumber = document.getElementById('order-number').value;
 
-    // Simulação: busca do valor de acordo com o pedido (apenas exemplo)
-    const mockValues = {
-        1: 100.50,
-        2: 75.00,
-        3: 50.75
-    };
 
-    if (mockValues[orderNumber]) {
-        document.getElementById('total-amount').value = mockValues[orderNumber];
-    } else {
-        document.getElementById('total-amount').value = '';
-    }
-});
+
 
 
 
