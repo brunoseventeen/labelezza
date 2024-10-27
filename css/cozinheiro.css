@@ -41,7 +41,7 @@ h2{
     max-height: 300px;
     overflow-y: auto;
     box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.15);
-    border: 2px solid #D4AF37;
+    border: 2px solid #ddcc92;
     color: #D4AF37; /* Cor do texto dentro da área de pedidos */
 }
 
@@ -52,6 +52,28 @@ h2{
 
 p{
     background-color: transparent;
+}
+
+.finalizar{
+    background: linear-gradient(135deg, #e0c785 0%, #f0e3b2 50%, #fffdf2 100%);
+    color: #967e29;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    height: 35px;
+
+}
+
+.finalizar:hover{
+    box-shadow:5px 5px 5px  #000000 (0, 0, 0.9);
+    color: #b99727;
+    background: linear-gradient(195deg, #e0c785 0%, #f5e5ae 50%, #fffdf2 100%);
+    
+}
+
+h5{
+    font-family:  'Poppins', sans-serif;
+    font-weight:bold ;
 }
 
 

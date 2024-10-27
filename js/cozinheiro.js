@@ -22,14 +22,14 @@ function adicionarPedidoAoContainer(pedido) {
     const itensHTML = pedido.itens.map(item => `
         <div class="row">
             <div class="col">${item.nome}</div>
-            <div class="col">${item.valor.toFixed(2).replace('.', ',')}</div>
+            <div class="col"> ${item.valor.toFixed(2).replace('.', ',')}</div>
         </div>
     `).join('');
 
     pedidoDiv.innerHTML = `
     <h5>Pedido ID: ${pedido.id} - Mesa: ${pedido.mesa}</h5>
-    <div>${itensHTML}</div>
-    <button class="btn btn-danger mt-2" onclick="finalizarPedido(${pedido.id})">Finalizar Pedido</button>
+    <div> ${itensHTML}  </div>
+    <button class="finalizar" onclick="finalizarPedido(${pedido.id})">Finalizar Pedido</button>
 `;
 
     
