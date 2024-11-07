@@ -26,10 +26,7 @@ let itensPedido = [];
 
 function adicionarAoPedido(nome, valor) {
     total += valor; // Adiciona o valor ao total
-
-    // Adiciona o item ao pedido
-    itensPedido.push({ nome, valor });
-
+    itensPedido.push({ nome, valor }); // Adiciona o item ao pedido
     atualizarTotal(); // Atualiza a exibição do total
     exibirItensPedido(); // Exibe os itens adicionados ao pedido
 }
@@ -50,8 +47,6 @@ function exibirItensPedido() {
     });
 }
 
-
-
 function finalizarPedidoGarcom() {
     if (itensPedido.length === 0) {
         alert("Não há itens no pedido!");
@@ -69,16 +64,13 @@ function finalizarPedidoGarcom() {
         id: pedidoId,
         mesa: mesa, // Adiciona o número da mesa
         itens: itensPedido,
-        total: total
+        total: total,
+        status: "pendente" // Adiciona o status inicial como "pendente"
     };
 
     const pedidosExistentes = JSON.parse(localStorage.getItem("pedidosCozinheiro")) || [];
     pedidosExistentes.push(pedidoCompleto);
     localStorage.setItem("pedidosCozinheiro", JSON.stringify(pedidosExistentes));
-
-
-    
-
 
     // Limpar o pedido do garçom
     itensPedido = [];
@@ -89,5 +81,7 @@ function finalizarPedidoGarcom() {
 
     alert("Pedido finalizado e enviado para a cozinha!");
 }
+
+
 
 

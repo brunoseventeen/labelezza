@@ -23,33 +23,55 @@ function voltar() {
 }
 
 function mesa(num) {
-    const cliente = prompt('Digite o seu CPF');
-    if (cliente !== null) {
-        localStorage.setItem('cliente', cliente);
-        alert('Cliente registrado: ' + cliente + ' na mesa ' + num);
-        const mesabt = document.getElementById("mesa" + num);
-        mesabt.disabled = true;
-        mesabt.classList.add('disabled');
-        localStorage.setItem(`mesa${num}`, 'disabled'); // Salva o estado da mesa como desativada
-    } else {
-        alert('Entrada cancelada.');
+    let cliente = '';
+    while (!cliente) { // Continua pedindo até que o usuário insira algo
+        cliente = prompt('Digite o seu CPF');
+        if (cliente === null) {
+            alert('Entrada cancelada.');
+            return; // Encerra a função se o usuário cancelar
+        }
     }
+
+    // Recupera o array de registros de CPFs e mesas, ou cria um novo array se não existir
+    let registros = JSON.parse(localStorage.getItem('registros')) || [];
+
+    // Adiciona o novo registro (CPF e mesa) ao array
+    registros.push({ cpf: cliente, mesa: num });
+
+    // Armazena o array atualizado no localStorage
+    localStorage.setItem('registros', JSON.stringify(registros));
+
+    alert('Cliente registrado: ' + cliente + ' na mesa ' + num);
+    const mesabt = document.getElementById("mesa" + num);
+    mesabt.disabled = true;
+    mesabt.classList.add('disabled');
+    localStorage.setItem(`mesa${num}`, 'disabled'); // Salva o estado da mesa como desativada
 }
 
 function lib(num) {
     const mesa = document.getElementById('mesa' + num);
-    
+
     // Verifica se a classe 'disabled' está presente
     if (mesa.classList.contains('disabled')) {
         mesa.classList.remove('disabled'); // Remove a classe 'disabled'
         alert('Mesa ' + num + ' liberada!');
         mesa.disabled = false;
         localStorage.removeItem(`mesa${num}`); // Remove o estado da mesa
+
+        // Recupera o array de registros de CPFs e mesas
+        let registros = JSON.parse(localStorage.getItem('registros')) || [];
+
+        // Filtra o array para remover o registro da mesa liberada
+        registros = registros.filter(registro => registro.mesa !== num);
+
+        // Atualiza o localStorage com o array filtrado
+        localStorage.setItem('registros', JSON.stringify(registros));
     } else {
         alert('A mesa não possui a classe "disabled".');
     }
     document.getElementById("mesasusadas").innerText = "";
 }
+
 
 // Função para carregar o estado das mesas ao iniciar
 function carregarEstadoMesas() {
