@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", carregarPedidos);
 function carregarPedidos() {
     // Tentar ler os pedidos salvos no localStorage
     const pedidos = JSON.parse(localStorage.getItem("pedidosCozinheiro")) || [];
+    const pedidos = JSON.parse(localStorage.getItem("registros")) || [];
     const pedidoContainer = document.getElementById("pedidosContainer");
 
     pedidoContainer.innerHTML = ''; // Limpar conteúdo anterior
@@ -72,8 +73,8 @@ function adicionarPedidoAoContainer(pedido, divMesa) {
     `).join('');
 
     pedidoDiv.innerHTML = `
-        <h5>Pedido ID: ${pedido.id} - Mesa: ${pedido.mesa}</h5>
-        <div>${itensHTML}</div>
+    <h5>Pedido ID: ${pedido.id} </h5>
+    <div>${itensHTML}</div>
         <div>Total: ${pedido.total.toFixed(2).replace('.', ',')} R$</div>
         <p>Status: ${pedido.status}</p>
     `;
@@ -95,3 +96,4 @@ function sairDaMesa(mesaNumero) {
 
     alert("Pedidos da mesa apagados!");
 }
+// - Mesa: ${pedido.mesa}
